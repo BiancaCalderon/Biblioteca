@@ -1,10 +1,10 @@
 package Model;
 
-public class Articulo extends Libro {
+public class Articulo extends Biblioteca {
     public String arbitro;
 
-    public Articulo(int ID, String name, String autor, String editorial, String materia, int ceje, boolean estado, String arbitro) {
-        super(ID, name, autor, editorial, materia, ceje, estado);
+    public Articulo(String Titulo, String Autor, String Materia, int ejemplares, boolean estado, String arbitro) {
+        super(Titulo, Autor, Materia, ejemplares, estado);
         this.arbitro = arbitro;
 
     }
