@@ -15,9 +15,14 @@ public class Clientes {
     private ArrayList<Revista> revistaPrestados = new ArrayList<Revista>();
     private HashMap<String,HashMap<String, Integer>> loansSubject = new HashMap<String,HashMap<String, Integer>>();
 
-    public Clientes(int ID, String Name, String Direccion, int Prestamos, String fechap) {
+    public Clientes(int ID, String Name, String Direccion, int Prestamos, String fechap, String fechad) {
+
         this.ID = ID;
-    }
+        this.Name = Name;
+        this.Direccion = Direccion;
+        this.Prestamos = Prestamos;
+        this.fechap = fechap;
+        this.fechad = fechad;}
 
     public int getID(){
         return ID;
@@ -31,9 +36,12 @@ public class Clientes {
         }
     }
 
-    public void setFechad(){
+    public String setFechad(){
+            return fechad;
 
-    }
+        }
+
+
 
 
     public void setLoansSubjects(String type, String subject, int amount){

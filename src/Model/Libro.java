@@ -1,31 +1,36 @@
 package Model;
 
 
-public class Libro {
-
-    private int ID;
-    private String Titulo;
+public class Libro extends Propiedades{
     private String Autor;
-    private String Editorial;
-    public String name;
-    public String editorial;
-    public String materia;
+    private String editorial;
 
 
-    public Libro(int ID, String Titulo, String Autor, String editorial, String Materia, int ejemplares, boolean estado) {
-
+    public Libro(String Titulo, String Materia, int ID, int ejemplares, boolean estado, String Autor, String editorial) {
+        super(Titulo, Materia, ID, ejemplares, estado);
+        this.Titulo = Titulo;
+        this.Materia = Materia;
         this.ID = ID;
+        this.ejemplares = ejemplares;
+        this.estado = estado;
+        this.Autor= Autor;
         this.editorial = editorial;
 
     }
 
+    public String getTitulo() {return Titulo;}
+    public String getMateria() {
+        return Materia;
+    }
     public int getID() {
         return ID;
     }
 
-    public String getName() {
-        return name;
-    }
+    public int ejemplares () {return ejemplares;}
+
+    public boolean estado() {
+        return this.estado;
+    } //si boolean = true está disponible
 
     public String getAutor() {
         return this.Autor;
@@ -35,21 +40,12 @@ public class Libro {
         return editorial;
     }
 
-    public String getMateria() {
-        return materia;
-    }
-
-    public int getCeje() {
-        return this.ejemplares;
-    }
-
-    public boolean isEstado() {
-        return this.estado;
-    }
 
 
 
-    public boolean estado; //si boolean = true está disponible
+
+
+   // public boolean estado; //si boolean = true está disponible
 
 
 

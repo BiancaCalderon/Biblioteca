@@ -27,21 +27,23 @@ public class Controller {
             switch (selection){
                 case 1:
                     // Ingresar libro
+                    System.out.println("Eligió la opción 1");
                     break;
                 case 2:
-
+                    System.out.println("Eligió la opción 2");
                     break;
                 case 3:
-
+                    System.out.println("Eligió la opción 3");
                     break;
                 case 4:
-
+                    System.out.println("Eligió la opción 4");
                     holdScreen(4000);
                     break;
                 case 5:
-
+                    System.out.println("Eligió la opción 5");
                     break;
                 case 6:
+                    System.out.println("Eligió la opción 6");
                     if(costumerInfo == null){
                         System.out.println("No ha seleccionado un cliente existe, debe hacerlo");
                         continue;
