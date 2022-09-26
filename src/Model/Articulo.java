@@ -16,4 +16,8 @@ public class Articulo extends Propiedades {
     public void setArbitro(String arbitro) {
         this.arbitro = arbitro;
     }
+
+    public int getID() {
+        return ID;
+    }
 }

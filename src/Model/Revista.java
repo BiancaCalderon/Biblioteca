@@ -10,6 +10,10 @@ public class Revista extends Propiedades {
         this.year = year;
         this.num = num;
     }
+    public int getID() {
+        return ID;
+    }
+
     public int getYear() {
         return year;
     }

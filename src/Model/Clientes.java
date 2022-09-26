@@ -2,6 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.function.Predicate;
 
 public class Clientes {
     private int ID;
@@ -24,14 +25,24 @@ public class Clientes {
         this.fechap = fechap;
         this.fechad = fechad;}
 
+    public Clientes() {
+
+    }
+
     public int getID(){
         return ID;
     }
 
+    public int getPrestamos(){
+        return Prestamos;
+    }
+
     public boolean cantidadPrestamos(){
         if(Prestamos == 5){
+            System.out.println("Ya tiene el máximo de préstamos");
             return  false;
         }else{
+            System.out.println("Préstamo realizado");
             return true;
         }
     }
@@ -40,9 +51,6 @@ public class Clientes {
             return fechad;
 
         }
-
-
-
 
     public void setLoansSubjects(String type, String subject, int amount){
         HashMap<String, Integer> loanSubject = new HashMap<String, Integer>();
@@ -69,6 +77,9 @@ public class Clientes {
             }
 
         }
+    }
+
+    public void setLoansSubjects() {
     }
 }
 

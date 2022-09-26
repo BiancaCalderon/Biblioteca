@@ -45,11 +45,6 @@ public class Libro extends Propiedades{
 
 
 
-   // public boolean estado; //si boolean = true está disponible
-
-
-
-
 
     }
 

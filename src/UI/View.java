@@ -22,7 +22,7 @@ public class View {
     }
 
     public int options() {
-        String[] options = {"Insertar Libro", "Cantidad de documentos", "Realizar Préstamo", "Realizar Devolución", "Préstamos según tipo por cliente", "Cantidad de revistas según la materia", "Ejemplares disponibles de libro/artículo", "Salir"};
+        String[] options = {"Insertar Libro", "Título según ID","Cantidad de documentos", "Realizar Préstamo", "Realizar Devolución", "Préstamos según tipo por cliente", "Cantidad de revistas según la materia", "Ejemplares disponibles de libro/artículo", "Salir"};
         for (int i = 0; i < options.length; i++) {
             System.out.println((i + 1) + ". " + options[i]);
         }
